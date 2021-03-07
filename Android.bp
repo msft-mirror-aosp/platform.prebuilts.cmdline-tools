@@ -45,3 +45,33 @@ java_import_host {
         "tools/lib/external/lint-psi/uast/uast-all.jar",
     ],
 }
+
+// The lint shell script in tools/bin/lint uses tools/lib/lint-classpath.jar as its classpath.
+// That jar contains a list of other jars that java adds to the classpath.  This makes it impossible
+// for the build system to track dependencies.
+// This genrule reads the jars from tools/lib/lint-classpath.jar and then merges them all together into
+// a single jar.  The result is then embedded into a self-contained java_binary.
+java_genrule_host {
+    name: "lint-classpath",
+    srcs: [
+        "tools/lib/lint-classpath.jar",
+        "tools/lib/**/*.jar",
+    ],
+    out: [
+        "lint-classpath.jar",
+    ],
+    tools: [
+        "merge_zips",
+    ],
+    cmd: "unzip -pq $(location tools/lib/lint-classpath.jar) META-INF/MANIFEST.MF > $(genDir)/list && " +
+        "for jar in $$(grep '\\.jar' $(genDir)/list); do " +
+        " echo $$(dirname $(location tools/lib/lint-classpath.jar))/$${jar}; " +
+        "done > $(genDir)/jars && " +
+        "$(location merge_zips) -j -ignore-duplicates -stripFile 'META-INF/*.SF' -stripFile 'META-INF/*.DSA' $(out) $$(cat $(genDir)/jars)",
+}
+
+java_binary_host {
+    name: "lint",
+    static_libs: ["lint-classpath"],
+    wrapper: "tools/bin/lint",
+}
