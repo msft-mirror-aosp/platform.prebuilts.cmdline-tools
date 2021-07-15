@@ -9,9 +9,9 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://dl.google.com/android/repository/commandlinetools-linux-6514223_latest.zip"
+    value: "https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip"
   }
-  version: "2.0"
-  last_upgrade_date { year: 2020 month: 6 day: 1 }
+  version: "3.0"
+  last_upgrade_date { year: 2021 month: 3 day: 22 }
   license_type: RESTRICTED
 }
