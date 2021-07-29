@@ -75,3 +75,17 @@ java_binary_host {
     static_libs: ["lint-classpath"],
     wrapper: "tools/bin/lint",
 }
+
+java_import_host {
+    name: "lint_tests",
+    jars: [
+        "tools/lib/lint/lint-tests.jar",
+        "tools/lib/common/common.jar",
+        "tools/lib/external/org/ow2/asm/asm/9.1/asm-9.1.jar",
+        "tools/lib/external/org/ow2/asm/asm-analysis/9.1/asm-analysis-9.1.jar",
+        "tools/lib/external/org/ow2/asm/asm-tree/9.1/asm-tree-9.1.jar",
+        "tools/lib/layoutlib-api/layoutlib-api.jar",
+        "tools/lib/lint/cli/libcli.jar",
+        "tools/lib/sdk-common/sdk-common.jar",
+    ]
+}
