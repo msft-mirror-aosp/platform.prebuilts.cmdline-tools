@@ -33,16 +33,16 @@ license {
 java_import_host {
     name: "lint_api",
     jars: [
-        "tools/lib/lint/lint-api.jar",
-        "tools/lib/lint/lint-checks.jar",
+        "tools/lib/lint/tools.lint-api.jar",
+        "tools/lib/lint/tools.lint-checks.jar",
 
         // A subset of the jars listed in MANIFEST.MF in
         // tools/lib/lint-classpath.jar needed to provide dependencies
         // of lint-api.jar and lint-checks.jar.
         "tools/lib/external/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar",
-        "tools/lib/external/lint-psi/intellij-core/intellij-core-all.jar",
-        "tools/lib/external/lint-psi/kotlin-compiler/kotlin-compiler-all.jar",
-        "tools/lib/external/lint-psi/uast/uast-all.jar",
+        "tools/lib/external/lint-psi/intellij-core/intellij-core-mvn.jar",
+        "tools/lib/external/lint-psi/kotlin-compiler/kotlin-compiler-mvn.jar",
+        "tools/lib/external/lint-psi/uast/uast.jar",
     ],
 }
 
@@ -79,13 +79,13 @@ java_binary_host {
 java_import_host {
     name: "lint_tests",
     jars: [
-        "tools/lib/lint/lint-tests.jar",
-        "tools/lib/common/common.jar",
+        "lint-tests.jar",
+        "tools/lib/common/tools.common.jar",
         "tools/lib/external/org/ow2/asm/asm/9.1/asm-9.1.jar",
         "tools/lib/external/org/ow2/asm/asm-analysis/9.1/asm-analysis-9.1.jar",
         "tools/lib/external/org/ow2/asm/asm-tree/9.1/asm-tree-9.1.jar",
-        "tools/lib/layoutlib-api/layoutlib-api.jar",
-        "tools/lib/lint/cli/libcli.jar",
-        "tools/lib/sdk-common/sdk-common.jar",
+        "tools/lib/layoutlib-api/tools.layoutlib-api.jar",
+        "tools/lib/lint/cli/cli.jar",
+        "tools/lib/sdk-common/tools.sdk-common.jar",
     ]
 }
