@@ -35,6 +35,7 @@ java_import_host {
     jars: [
         "tools/lib/lint/tools.lint-api.jar",
         "tools/lib/lint/tools.lint-checks.jar",
+        "tools/lib/common/tools.common.jar",
 
         // A subset of the jars listed in MANIFEST.MF in
         // tools/lib/lint-classpath.jar needed to provide dependencies
