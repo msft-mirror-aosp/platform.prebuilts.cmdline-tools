@@ -40,6 +40,7 @@ java_import_host {
         // A subset of the jars listed in MANIFEST.MF in
         // tools/lib/lint-classpath.jar needed to provide dependencies
         // of lint-api.jar and lint-checks.jar.
+        "tools/lib/external/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
         "tools/lib/external/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar",
         "tools/lib/external/lint-psi/intellij-core/intellij-core-mvn.jar",
         "tools/lib/external/lint-psi/kotlin-compiler/kotlin-compiler-mvn.jar",
@@ -82,9 +83,9 @@ java_import_host {
     jars: [
         "lint-tests.jar",
         "tools/lib/common/tools.common.jar",
-        "tools/lib/external/org/ow2/asm/asm/9.1/asm-9.1.jar",
-        "tools/lib/external/org/ow2/asm/asm-analysis/9.1/asm-analysis-9.1.jar",
-        "tools/lib/external/org/ow2/asm/asm-tree/9.1/asm-tree-9.1.jar",
+        "tools/lib/external/org/ow2/asm/asm/9.2/asm-9.2.jar",
+        "tools/lib/external/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar",
+        "tools/lib/external/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar",
         "tools/lib/layoutlib-api/tools.layoutlib-api.jar",
         "tools/lib/lint/cli/cli.jar",
         "tools/lib/sdk-common/tools.sdk-common.jar",
