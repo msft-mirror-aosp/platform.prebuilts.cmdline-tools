@@ -1,10 +1,10 @@
 ============================================================
 Notices for file(s):
-kotlin-stdlib-common-1.5.31.NOTICE
-kotlin-stdlib-1.5.31.NOTICE
-kotlin-stdlib-jdk7-1.5.31.NOTICE
-kotlin-stdlib-jdk8-1.5.31.NOTICE
-kotlin-reflect-1.5.31.NOTICE
+kotlin-stdlib-common-1.7.10.NOTICE
+kotlin-stdlib-1.7.10.NOTICE
+kotlin-stdlib-jdk7-1.7.10.NOTICE
+kotlin-stdlib-jdk8-1.7.10.NOTICE
+kotlin-reflect-1.7.10.NOTICE
 ------------------------------------------------------------
 /*
  * Copyright 2010-2015 JetBrains s.r.o.
@@ -227,7 +227,7 @@ jsr305-3.0.2.NOTICE
 error_prone_annotations-2.4.0.NOTICE
 j2objc-annotations-1.3.NOTICE
 guava-30.1-jre.NOTICE
-gson-2.8.6.NOTICE
+gson-2.8.9.NOTICE
 jimfs-1.1.NOTICE
 commons-compress-1.20.NOTICE
 FastInfoset-1.2.16.NOTICE
@@ -869,7 +869,7 @@ commons-io-2.4.NOTICE
 
 ============================================================
 Notices for file(s):
-trove4j-1.0.20181211.NOTICE
+trove4j-1.0.20200330.NOTICE
 ------------------------------------------------------------
 		  GNU LESSER GENERAL PUBLIC LICENSE
 		       Version 2.1, February 1999
