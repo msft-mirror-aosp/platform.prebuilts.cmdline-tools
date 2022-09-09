@@ -236,6 +236,7 @@ commons-logging-1.2.NOTICE
 commons-codec-1.11.NOTICE
 httpclient-4.5.13.NOTICE
 httpmime-4.5.6.NOTICE
+javawriter-2.5.0.NOTICE
 ------------------------------------------------------------
 
                                  Apache License
@@ -1740,6 +1741,7 @@ Notices for file(s):
 asm-9.2.NOTICE
 asm-tree-9.2.NOTICE
 asm-analysis-9.2.NOTICE
+asm-commons-9.2.NOTICE
 ------------------------------------------------------------
 Copyright (c) 2000-2011 INRIA, France Telecom
 All rights reserved.
