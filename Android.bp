@@ -78,6 +78,31 @@ java_binary_host {
     wrapper: "tools/bin/lint",
 }
 
+java_genrule_host {
+    name: "resourceshrinker-classpath",
+    srcs: [
+        "tools/lib/resourceshrinker-classpath.jar",
+        "tools/lib/**/*.jar",
+    ],
+    out: [
+        "resourceshrinker-classpath.jar",
+    ],
+    tools: [
+        "merge_zips",
+    ],
+    cmd: "unzip -pq $(location tools/lib/resourceshrinker-classpath.jar) META-INF/MANIFEST.MF > $(genDir)/list && " +
+        "for jar in $$(grep '\\.jar' $(genDir)/list); do " +
+        " echo $$(dirname $(location tools/lib/resourceshrinker-classpath.jar))/$${jar}; " +
+        "done > $(genDir)/jars && " +
+        "$(location merge_zips) -j -ignore-duplicates -stripFile 'META-INF/*.SF' -stripFile 'META-INF/*.DSA' $(out) $$(cat $(genDir)/jars)",
+}
+
+java_binary_host {
+    name: "resourceshrinker",
+    static_libs: ["resourceshrinker-classpath"],
+    wrapper: "tools/bin/resourceshrinker",
+}
+
 java_import_host {
     name: "lint_tests",
     jars: [
