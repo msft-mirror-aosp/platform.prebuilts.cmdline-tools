@@ -59,6 +59,7 @@ cp -f "${tmpdir}/lint-tests.jar" lint-tests.jar
 cp -f "${tmpdir}/manifest.xml" manifest.xml
 
 patch -p1 < patches/bin-lint.patch
+patch -p1 < patches/bin-resourceshrinker.patch
 
 git add tools lint-tests.jar manifest.xml
 git commit -m "Update cmdline-tools to ab/${BUILD_NUMBER}
