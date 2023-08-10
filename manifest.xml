@@ -7,7 +7,7 @@
 
   <superproject name="platform/superproject/base" remote="goog" revision="studio-main" />
 
-  <project path="tools/buildSrc" name="platform/tools/buildSrc" revision="74e46ee51b81223a7a36aef3b4b9667e5d20aabd">
+  <project path="tools/buildSrc" name="platform/tools/buildSrc" revision="de8d0e5be5663c5723804feae58e4266aa79808a">
     <linkfile dest="tools/build.gradle" src="base/build.gradle" />
 
     <linkfile dest="tools/gradle.properties" src="base/gradle.properties" />
@@ -71,9 +71,9 @@
 
   <project path="prebuilts/studio/layoutlib" name="platform/prebuilts/studio/layoutlib" clone-depth="1" revision="5c8392c85129a57f6cd7e7bc899ffa6f3ec0b0ec" />
 
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" clone-depth="1" revision="e6894e6e126b1b13e86a1244ea49497900f7c0dd" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" clone-depth="1" revision="349e86d2b269e757d3c7caa01bdf111d46f6a00e" />
 
-  <project path="tools/adt/idea" name="platform/tools/adt/idea" revision="2fd3213c928c33495a9a7b97ec2e2f0f1d2e898a" />
+  <project path="tools/adt/idea" name="platform/tools/adt/idea" revision="bd07b142739f2f45016ce500336d15a824b1a075" />
 
   <project path="tools/analytics-library" name="platform/tools/analytics-library" revision="721b885d1682ff2154a1645f5d13a442b0d68dbd" />
 
@@ -83,7 +83,7 @@
 
   <project path="tools/assets" name="assets/android-studio-ux-assets" clone-depth="1" revision="12cb5d3f886788b74450295f62da9d7517e7ba94" />
 
-  <project path="tools/base" name="platform/tools/base" revision="2eb38583a3b03c6d543fa77aebc56ea9d82ab2da">
+  <project path="tools/base" name="platform/tools/base" revision="0b78b70fc42a3d5403424455a27808470154de6b">
     <linkfile dest="tools/BUILD.bazel" src="bazel/tools.BUILD.bazel" />
 
     <linkfile dest="WORKSPACE" src="bazel/toplevel.WORKSPACE" />
@@ -111,23 +111,23 @@
 
   <project path="tools/gradle" name="platform/tools/gradle" revision="dd0e7f0e5a01b1869451e2b6e6f74ff89f9c1cad" />
 
-  <project path="tools/gradle-recipes" name="platform/tools/gradle-recipes" revision="9169241611ff3c9b54c794cbc3ae7b1f58e92332" />
+  <project path="tools/gradle-recipes" name="platform/tools/gradle-recipes" revision="94019922f7055ae0d33ec8d7d3cb788ee7b1e7d9" />
 
-  <project path="tools/idea" name="platform/tools/idea" revision="3b6ce8d815a82e280ee5b5f05443324896633f8a" />
+  <project path="tools/idea" name="platform/tools/idea" revision="a098b31706778ddf972f54053954fb9b0db913a7" />
 
   <project path="tools/repohooks" name="platform/tools/repohooks" revision="f37726d2268fe61ef1697ecb32963657a45b3964" />
 
   <project path="tools/sherpa" name="platform/frameworks/opt/sherpa" revision="c0de6383b1db33a235451a7b0f806a0b2d1fae6a" />
 
-  <project path="tools/studio/google/cloud/testing" name="platform/tools/studio/google/cloud/testing" revision="4fc75b5436660abcb0028ce46a5d1ef27bc3ee7d" />
+  <project path="tools/studio/google/cloud/testing" name="platform/tools/studio/google/cloud/testing" revision="2bb8b302f0df7419d29e960210c5919f6af3918c" />
 
   <project path="tools/studio/google/cloud/tools" name="platform/tools/studio/google/cloud/tools" revision="9999619037b4ef72c4bfdf055e3bec5ca76aaa8d" />
 
   <project path="tools/swing-testing" name="platform/tools/swing-testing" revision="4304aa5ff6a7e2d25ca257f377a321498e63f142" />
 
-  <project path="tools/vendor/google" name="platform/tools/vendor/google" revision="9a381cbf9bb304192abaeebf0658b2e37e996526" />
+  <project path="tools/vendor/google" name="platform/tools/vendor/google" revision="e5845d63f0494ba9a663289a4b8b137e5620e48e" />
 
-  <project path="tools/vendor/google3/blaze" name="platform/tools/vendor/google3/blaze" revision="3066e5ff4d1e5ff8ec39cce0c086f75707bb4629" />
+  <project path="tools/vendor/google3/blaze" name="platform/tools/vendor/google3/blaze" revision="1db11381775a888584dc98432c9bb1b05218f563" />
 
   <project path="tools/vendor/intel" name="platform/tools/vendor/intel" revision="1212619833f94165022ac6ba46a434d88fef37b4" />
 
@@ -141,7 +141,7 @@
 
   <project path="prebuilts/studio/sdk/remote" name="platform/tools/google_prebuilts/studio/sdk/remote" clone-depth="1" revision="085bbe4dafcbad6db500917991bd35a5a450c7cf" />
 
-  <project path="prebuilts/studio/intellij-sdk" name="platform/tools/vendor/google_prebuilts/studio/intellij-sdk" clone-depth="1" revision="ee768451ee644e768a5dd1e118f12a24310a4347" />
+  <project path="prebuilts/studio/intellij-sdk" name="platform/tools/vendor/google_prebuilts/studio/intellij-sdk" clone-depth="1" revision="78ee2626a6f4fe14add3f9ea75c23818e4fe21c2" />
 
   <project path="prebuilts/studio/sdk/darwin" name="platform/tools/vendor/google_prebuilts/studio/sdk/darwin" clone-depth="1" groups="notdefault,platform-darwin" revision="15ab5c04490adf5c9927add497806084e42b63e0" />
 
@@ -149,7 +149,7 @@
 
   <project path="prebuilts/studio/sdk/windows" name="platform/tools/vendor/google_prebuilts/studio/sdk/windows" clone-depth="1" groups="notdefault,platform-windows" revision="722688aa150e854a3598eddb5a2215b2135a83a2" />
 
-  <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" revision="e1aa29c8cf77aeec0577f9366649be01e1a6c2b1" clone-depth="1" />
+  <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" revision="bbdb2ec06d06241acb92c28a29514d593406130c" clone-depth="1" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
