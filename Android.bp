@@ -83,6 +83,7 @@ java_genrule_host {
     srcs: [
         "tools/lib/resourceshrinker-classpath.jar",
         "tools/lib/**/*.jar",
+        ":r8lib-prebuilt"
     ],
     out: [
         "resourceshrinker-classpath.jar",
@@ -90,10 +91,12 @@ java_genrule_host {
     tools: [
         "merge_zips",
     ],
-    cmd: "unzip -pq $(location tools/lib/resourceshrinker-classpath.jar) META-INF/MANIFEST.MF > $(genDir)/list && " +
+    // Use r8 from prebuilts/r8 instead of embedded version.
+    cmd: "unzip -pq $(location tools/lib/resourceshrinker-classpath.jar) META-INF/MANIFEST.MF | grep -v r8.jar > $(genDir)/list && " +
         "for jar in $$(grep '\\.jar' $(genDir)/list); do " +
         " echo $$(dirname $(location tools/lib/resourceshrinker-classpath.jar))/$${jar}; " +
         "done > $(genDir)/jars && " +
+        "echo $(location :r8lib-prebuilt) >> $(genDir)/jars && " +
         "$(location merge_zips) -j -ignore-duplicates -stripFile 'META-INF/*.SF' -stripFile 'META-INF/*.DSA' $(out) $$(cat $(genDir)/jars)",
 }
 
