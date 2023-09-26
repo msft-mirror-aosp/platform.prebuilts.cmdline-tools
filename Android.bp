@@ -108,9 +108,9 @@ java_import_host {
     jars: [
         "lint-tests.jar",
         "tools/lib/common/tools.common.jar",
-        "tools/lib/external/org/ow2/asm/asm/9.2/asm-9.2.jar",
-        "tools/lib/external/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar",
-        "tools/lib/external/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar",
+        "tools/lib/external/org/ow2/asm/asm/9.3/asm-9.3.jar",
+        "tools/lib/external/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar",
+        "tools/lib/external/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar",
         "tools/lib/layoutlib-api/tools.layoutlib-api.jar",
         "tools/lib/lint/cli/cli.jar",
         "tools/lib/sdk-common/tools.sdk-common.jar",
