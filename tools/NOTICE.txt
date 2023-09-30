@@ -1,10 +1,10 @@
 ============================================================
 Notices for file(s):
-kotlin-stdlib-common-1.9.0-Beta.NOTICE
-kotlin-stdlib-1.9.0-Beta.NOTICE
-kotlin-stdlib-jdk7-1.9.0-Beta.NOTICE
-kotlin-stdlib-jdk8-1.9.0-Beta.NOTICE
-kotlin-reflect-1.9.0-Beta.NOTICE
+kotlin-stdlib-1.9.20-Beta.NOTICE
+kotlin-stdlib-jdk7-1.9.20-Beta.NOTICE
+kotlin-stdlib-jdk8-1.9.20-Beta.NOTICE
+kotlin-reflect-1.9.20-Beta.NOTICE
+kotlin-stdlib-common-1.9.20-Beta.NOTICE
 ------------------------------------------------------------
 /*
  * Copyright 2010-2015 JetBrains s.r.o.
@@ -1944,9 +1944,9 @@ The code released under the CDDL shall be governed by the laws of the State of C
 
 ============================================================
 Notices for file(s):
-asm-9.2.NOTICE
-asm-tree-9.2.NOTICE
-asm-analysis-9.2.NOTICE
+asm-9.3.NOTICE
+asm-tree-9.3.NOTICE
+asm-analysis-9.3.NOTICE
 ------------------------------------------------------------
 Copyright (c) 2000-2011 INRIA, France Telecom
 All rights reserved.
