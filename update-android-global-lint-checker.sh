@@ -20,6 +20,7 @@ if [ -z $1 ]; then
 fi
 
 readonly BUILD_NUMBER=$1
+readonly TARGET=aosp_arm64-trunk_food-userdebug
 
 cd "$(dirname $0)"
 
@@ -30,12 +31,12 @@ fi
 
 /google/data/ro/projects/android/fetch_artifact \
   --bid ${BUILD_NUMBER} \
-  --target aosp_arm64-userdebug \
+  --target $TARGET \
   AndroidGlobalLintChecker.jar
 
 git add AndroidGlobalLintChecker.jar
 git commit -m "Update AndroidGlobalLintChecker to ab/${BUILD_NUMBER}
 
-https://ci.android.com/builds/submitted/${BUILD_NUMBER}/aosp_arm64-userdebug/latest
+https://ci.android.com/builds/submitted/${BUILD_NUMBER}/$TARGET/latest
 
 Test: treehugger"
