@@ -41,7 +41,7 @@ java_import_host {
         // tools/lib/lint-classpath.jar needed to provide dependencies
         // of lint-api.jar and lint-checks.jar.
         "tools/lib/external/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-        "tools/lib/external/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
+        "tools/lib/external/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar",
         "tools/lib/external/lint-psi/intellij-core/intellij-core-mvn.jar",
         "tools/lib/external/lint-psi/kotlin-compiler/kotlin-compiler-mvn.jar",
         "tools/lib/external/lint-psi/uast/uast.jar",
@@ -111,9 +111,9 @@ java_import_host {
     jars: [
         "lint-tests.jar",
         "tools/lib/common/tools.common.jar",
-        "tools/lib/external/org/ow2/asm/asm/9.3/asm-9.3.jar",
-        "tools/lib/external/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar",
-        "tools/lib/external/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar",
+        "tools/lib/external/org/ow2/asm/asm/9.6/asm-9.6.jar",
+        "tools/lib/external/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar",
+        "tools/lib/external/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar",
         "tools/lib/layoutlib-api/tools.layoutlib-api.jar",
         "tools/lib/lint/cli/cli.jar",
         "tools/lib/sdk-common/tools.sdk-common.jar",
