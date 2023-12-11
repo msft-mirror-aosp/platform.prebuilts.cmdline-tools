@@ -7,7 +7,7 @@
 
   <superproject name="platform/superproject/base" remote="goog" revision="studio-main" />
 
-  <project path="tools/buildSrc" name="platform/tools/buildSrc" revision="e08dbdef8363233ec25a08abbd46dca09fdd7606">
+  <project path="tools/buildSrc" name="platform/tools/buildSrc" revision="ad6ccfefd16246fb232fa3228791c2a2f0cce0f8">
     <linkfile dest="tools/build.gradle" src="base/build.gradle" />
 
     <linkfile dest="tools/gradle.properties" src="base/gradle.properties" />
@@ -21,7 +21,7 @@
 
   <project path="external/dexter" name="platform/tools/dexter" revision="74c2cf6b983956ac8e9a23422a4d6a08c0019bf5" />
 
-  <project path="external/doclava" name="platform/external/doclava" revision="c37f0ff7a075597a81e4ad9e19854bebda8931c9" />
+  <project path="external/doclava" name="platform/external/doclava" revision="512ec266ba3aa10dfd7e6c3e247d7c6a90257616" />
 
   <project path="external/dokka" name="platform/external/dokka" groups="pdk" clone-depth="1" revision="8541ac1c032c1641578d2964553222f01a265f2d" />
 
@@ -31,7 +31,7 @@
 
   <project path="external/googletest" name="platform/external/googletest" revision="5c08f92c881b666998a4f7852c3cf9e393bf33a7" />
 
-  <project path="external/grpc-grpc" name="platform/external/grpc-grpc" revision="e75b72ca5cb222ac9847ffd63734e4e87194a1ef" />
+  <project path="external/grpc-grpc" name="platform/external/grpc-grpc" revision="7b430f32adaf3d0fc37f82225dd23e3f93707572" />
 
   <project path="external/jarjar" name="platform/external/jarjar" revision="741153e06175fbe4c2da2ad2ab8b704d9ab30259" />
 
@@ -41,17 +41,21 @@
 
   <project path="external/libpng" name="platform/external/libpng" revision="eafc399bc0f7bce56744f7c57e26d93e34a39cd9" upstream="udc-release" />
 
-  <project path="external/nanopb-c" name="platform/external/nanopb-c" revision="7e9017e31789501645e31f73af33d1dce4586619" />
+  <project path="external/android/system/logging" name="platform/system/logging" clone-depth="1" revision="2a8812ee44c811bb0cb7d0f388a355b462c6be81" />
+
+  <project path="external/nanopb-c" name="platform/external/nanopb-c" revision="e90dd6b4b2809aa628e748e134f885683dfa7dba" />
 
   <project path="external/perfetto" name="platform/external/perfetto" revision="31155364cd4e79d09c92df884510e149ca67df5e" />
 
   <project path="external/protobuf" name="platform/external/protobuf" revision="31e0674101933b61a540bf3a858ac7797e0f125d" />
 
+  <project path="external/python/absl-py" name="platform/external/python/absl-py" revision="bd7cdd4d3776c9d08bbfea96d711958b24a9fe9c" />
+
   <project path="external/skia" name="platform/external/skia" revision="0a1502782144e54d9a50ccaa3f5d0d09bc73cadb" clone-depth="1" upstream="udc-release" />
 
-  <project path="external/zlib" name="platform/external/zlib" revision="85bf6378540857c1bc26186503fd0515427285af" />
+  <project path="external/zlib" name="platform/external/zlib" revision="9760bae4db96d6fad9a6ec397bb804f15d3cb73d" />
 
-  <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" clone-depth="1" revision="31edc1ae28a40af20cb8ba41028e7cee5aff96d6" upstream="udc-layoutlib-native" groups="notdefault,layoutlib" />
+  <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" clone-depth="1" revision="aae8dd05cf194f568350253fa49b88dde39b4990" upstream="udc-layoutlib-native" groups="notdefault,layoutlib" />
 
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" clone-depth="1" groups="notdefault,platform-darwin" revision="4aaead81b6c35a7f10ac51bccf97c3ffc768aabe" />
 
@@ -65,17 +69,17 @@
 
   <project path="prebuilts/python/windows-x86" name="platform/prebuilts/python/windows-x86" clone-depth="1" revision="6afb84b14219361d32631cf71a7b8076b4673e03" />
 
-  <project path="prebuilts/r8" name="platform/prebuilts/r8" clone-depth="1" revision="f825980831d7b94d92ecc6f01cbbfc385f31dd0f" />
+  <project path="prebuilts/r8" name="platform/prebuilts/r8" clone-depth="1" revision="0c6d43f5467a2737ef15ede50801cbc5138eb842" />
 
-  <project path="prebuilts/studio/jdk" name="platform/prebuilts/studio/jdk" clone-depth="1" revision="3c2db2aa8cd0ebfbf43977735b3ec5a66508bccf" />
+  <project path="prebuilts/studio/jdk" name="platform/prebuilts/studio/jdk" clone-depth="1" revision="5f82a2e85429b1acc00992a228ff83fd6a8870aa" />
 
-  <project path="prebuilts/studio/layoutlib" name="platform/prebuilts/studio/layoutlib" clone-depth="1" revision="01203d9c7a6ec12dfdfc747fee64a2524dc5de9a" />
+  <project path="prebuilts/studio/layoutlib" name="platform/prebuilts/studio/layoutlib" clone-depth="1" revision="f94d268c9218669c7b8fff0f8ab7655b76e95a26" />
 
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" clone-depth="1" revision="18a40f8539277bc5960cab03202aa908abea86e3" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" clone-depth="1" revision="f9232e45eda1ae0c1656051cb24fe9e1c6bb6cd0" />
 
-  <project path="tools/adt/idea" name="platform/tools/adt/idea" revision="499a72860dbb696db90ee1170c72eac743bfd1dc" />
+  <project path="tools/adt/idea" name="platform/tools/adt/idea" revision="a20e62b3569fff698c7eb0b2c89a3a20ad2b837b" />
 
-  <project path="tools/analytics-library" name="platform/tools/analytics-library" revision="915b5152c2528351d3cd659921a7cfa1bb19f142" />
+  <project path="tools/analytics-library" name="platform/tools/analytics-library" revision="e9a6442672c32866817e1ba5ce0e71815b36c483" />
 
   <project path="tools/apksig" name="platform/tools/apksig" revision="c8811a8c5bfa362bfb4473f83473ba41b79455c2" />
 
@@ -83,7 +87,7 @@
 
   <project path="tools/assets" name="assets/android-studio-ux-assets" clone-depth="1" revision="12cb5d3f886788b74450295f62da9d7517e7ba94" />
 
-  <project path="tools/base" name="platform/tools/base" revision="b1f410241ef702949483da737113e6ea99247c51">
+  <project path="tools/base" name="platform/tools/base" revision="5a9d28bc83b3435b9649c3c4d9cf689cbbbbc9cc">
     <linkfile dest="tools/BUILD.bazel" src="bazel/tools.BUILD.bazel" />
 
     <linkfile dest="WORKSPACE" src="bazel/toplevel.WORKSPACE" />
@@ -101,47 +105,47 @@
     <linkfile dest="prebuilts/clang/studio-extra/wrapped_ar.darwin" src="bazel/toolchains/darwin/wrapped_ar" />
 </project>
 
-  <project path="tools/data-binding" name="platform/frameworks/data-binding" revision="108e14e9bb5a7b522bc6bf7dffbe72adb7e9b22f" />
+  <project path="tools/data-binding" name="platform/frameworks/data-binding" revision="855177808ddc495cad3d9ec6e09c1ed1c529ef5f" />
 
   <project path="tools/external/bazelbuild-rules-kotlin" name="platform/tools/external/bazelbuild-rules-kotlin" revision="cab5eaffc2012dfe46260c03d6419c0d2fa10be0" />
 
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" revision="5d8a9ce6a1801939006a451dfffe4f11d6211cfb" />
 
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" clone-depth="1" revision="b396dcc678b753eb7bd3c528e259918f4506a6e9" />
+  <project path="tools/external/gradle" name="platform/tools/external/gradle" clone-depth="1" revision="0b2646633292f08997203c7fddfa0bd101ded4f1" />
 
-  <project path="tools/gradle" name="platform/tools/gradle" revision="10fc79c2fefb98e0ca091d5b143bcf40153d6e96" />
+  <project path="tools/gradle" name="platform/tools/gradle" revision="e04a1123f0a42dcc2d59357056a14883bfab5328" />
 
-  <project path="tools/gradle-recipes" name="platform/tools/gradle-recipes" revision="8891c6dab8ff511045eed5065ad7989317221d02" />
+  <project path="tools/gradle-recipes" name="platform/tools/gradle-recipes" revision="8e26ab362a81ef78d16eadd4400ee6ec5e9b4f94" />
 
-  <project path="tools/idea" name="platform/tools/idea" revision="c2583f9e8516abb4f0ad39e51e70faa2da563f5f" />
+  <project path="tools/idea" name="platform/tools/idea" revision="efe3d841f46f0aa915bf12ed56cfd2c7c5501f9d" />
 
   <project path="tools/repohooks" name="platform/tools/repohooks" revision="f37726d2268fe61ef1697ecb32963657a45b3964" />
 
   <project path="tools/sherpa" name="platform/frameworks/opt/sherpa" revision="c0de6383b1db33a235451a7b0f806a0b2d1fae6a" />
 
-  <project path="tools/studio/google/cloud/testing" name="platform/tools/studio/google/cloud/testing" revision="a3f270b4e9b3f3cf260751db4549d961adc2febc" />
+  <project path="tools/studio/google/cloud/testing" name="platform/tools/studio/google/cloud/testing" revision="f9eab98e3bd7174b125d997f0aafbbb547efdeca" />
 
-  <project path="tools/studio/google/cloud/tools" name="platform/tools/studio/google/cloud/tools" revision="d3e18b5c31920a4a2e24aa52adf55dd4f1e5f97f" />
+  <project path="tools/studio/google/cloud/tools" name="platform/tools/studio/google/cloud/tools" revision="f223aaea72bcbc1a00d4613d71282c9a4095ee1a" />
 
-  <project path="tools/swing-testing" name="platform/tools/swing-testing" revision="4304aa5ff6a7e2d25ca257f377a321498e63f142" />
+  <project path="tools/swing-testing" name="platform/tools/swing-testing" revision="02b8679e02caa4b83bc2b06e2925a7e0c7cff7cb" />
 
-  <project path="tools/vendor/google" name="platform/tools/vendor/google" revision="19c2e756bde87a01fc706301c8457ad73d89850d" />
+  <project path="tools/vendor/google" name="platform/tools/vendor/google" revision="dc6a6a81e4e3a75633d3d0ab81af7864924dbb76" />
 
-  <project path="tools/vendor/google3/blaze" name="platform/tools/vendor/google3/blaze" revision="6a3a6bef18ea1cb42409023d03ac40187d55d44a" />
+  <project path="tools/vendor/google3/blaze" name="platform/tools/vendor/google3/blaze" revision="6933a459e7a6dd81a3d408bf1b6e7f3315aa6531" />
 
   <project path="tools/vendor/intel" name="platform/tools/vendor/intel" revision="1212619833f94165022ac6ba46a434d88fef37b4" />
 
-  <project path="tools/vendor/intellij/cidr" name="platform/tools/vendor/intellij/cidr" revision="72db17611e1e9e470693e4eb4b320e353ab453aa" />
+  <project path="tools/vendor/intellij/cidr" name="platform/tools/vendor/intellij/cidr" revision="34a2047e59a136d89aeaf6a587113885919805df" />
 
-  <project path="tools/vendor/adt_infra_internal" name="platform/tools/adt_infra_internal" groups="adt-infra" revision="5338cc9fc3ef23235ca0c0102ee6c766a6d36f08" />
+  <project path="tools/vendor/adt_infra_internal" name="platform/tools/adt_infra_internal" groups="adt-infra" revision="003374c67bfd24e8f86dc2fe354dc3f60a44147b" />
 
-  <project path="prebuilts/studio/buildbenchmarks" name="platform/tools/vendor/google_prebuilt/buildbenchmarks" clone-depth="1" revision="a84b5ec7cc3232fd56024fabaa04ff7b06cfdcf1" />
+  <project path="prebuilts/studio/buildbenchmarks" name="platform/tools/vendor/google_prebuilt/buildbenchmarks" clone-depth="1" revision="2161b2b0eeaf67542cce650f39f460bc98876065" />
 
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" revision="260b7e55cf3cab6efa5d07afddb971ab677ceee0" />
 
-  <project path="prebuilts/studio/sdk/remote" name="platform/tools/google_prebuilts/studio/sdk/remote" clone-depth="1" revision="085bbe4dafcbad6db500917991bd35a5a450c7cf" />
+  <project path="prebuilts/studio/sdk/remote" name="platform/tools/google_prebuilts/studio/sdk/remote" clone-depth="1" revision="ca0d61a5587a77d861a4484484fb4b86ff490aac" />
 
-  <project path="prebuilts/studio/intellij-sdk" name="platform/tools/vendor/google_prebuilts/studio/intellij-sdk" clone-depth="1" revision="1cc83c4c1209d6173ca0b3f6e65074fce2d4041b" />
+  <project path="prebuilts/studio/intellij-sdk" name="platform/tools/vendor/google_prebuilts/studio/intellij-sdk" clone-depth="1" revision="ef3a9f912ec2fbfba480222cbf1b111296105c7d" />
 
   <project path="prebuilts/studio/sdk/darwin" name="platform/tools/vendor/google_prebuilts/studio/sdk/darwin" clone-depth="1" groups="notdefault,platform-darwin" revision="15ab5c04490adf5c9927add497806084e42b63e0" />
 
@@ -149,7 +153,7 @@
 
   <project path="prebuilts/studio/sdk/windows" name="platform/tools/vendor/google_prebuilts/studio/sdk/windows" clone-depth="1" groups="notdefault,platform-windows" revision="722688aa150e854a3598eddb5a2215b2135a83a2" />
 
-  <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" revision="e7b3b88161756e078f5088f67c9ff66d05b58f2b" clone-depth="1" />
+  <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" revision="b96f76c9e0eba5587652475671534c7158b973c5" clone-depth="1" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
