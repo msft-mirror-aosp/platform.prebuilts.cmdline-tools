@@ -1,10 +1,10 @@
 ============================================================
 Notices for file(s):
-kotlin-stdlib-1.9.20-RC.NOTICE
-kotlin-stdlib-jdk7-1.9.20-RC.NOTICE
-kotlin-stdlib-jdk8-1.9.20-RC.NOTICE
-kotlin-reflect-1.9.20-RC.NOTICE
-kotlin-stdlib-common-1.9.20-RC.NOTICE
+kotlin-stdlib-1.9.20.NOTICE
+kotlin-stdlib-jdk7-1.9.20.NOTICE
+kotlin-stdlib-jdk8-1.9.20.NOTICE
+kotlin-reflect-1.9.20.NOTICE
+kotlin-stdlib-common-1.9.20.NOTICE
 ------------------------------------------------------------
 /*
  * Copyright 2010-2015 JetBrains s.r.o.
