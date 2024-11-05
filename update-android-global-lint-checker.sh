@@ -20,7 +20,7 @@ if [ -z $1 ]; then
 fi
 
 readonly BUILD_NUMBER=$1
-readonly TARGET=aosp_arm64-trunk_food-userdebug
+readonly TARGET=aosp_arm64-trunk_staging-userdebug
 
 cd "$(dirname $0)"
 
