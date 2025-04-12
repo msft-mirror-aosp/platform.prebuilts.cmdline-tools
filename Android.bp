@@ -83,7 +83,7 @@ java_genrule_host {
     srcs: [
         "tools/lib/resourceshrinker-classpath.jar",
         "tools/lib/**/*.jar",
-        ":r8lib-prebuilt"
+        ":r8lib-prebuilt",
     ],
     out: [
         "resourceshrinker-classpath.jar",
@@ -117,5 +117,18 @@ java_import_host {
         "tools/lib/layoutlib-api/tools.layoutlib-api.jar",
         "tools/lib/lint/cli/cli.jar",
         "tools/lib/sdk-common/tools.sdk-common.jar",
-    ]
+    ],
+}
+
+genrule {
+    name: "profgen",
+    out: ["profgen"],
+    srcs: ["tools/bin/profgen"],
+    cmd: "cp -f $(in) $(out)",
+    dist: {
+        targets: [
+            "dist_files",
+            "droidcore",
+        ],
+    },
 }
